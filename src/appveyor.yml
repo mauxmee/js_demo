@@ -5,6 +5,9 @@ environment:
 init:
   - git config --global core.autocrlf true
 
+# Don't actually build.
+build: off
+
 # Install scripts. (runs after repo cloning)
 install:
   # Get the latest stable version of Node.js or io.js
@@ -20,5 +23,3 @@ test_script:
   # run tests
   - npm test
 
-# Don't actually build.
-build: off
